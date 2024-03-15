@@ -4,6 +4,7 @@ from typing import Tuple
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
+    ''' type checking using mypy'''
     zoomed_in: Tuple = tuple(
         item for item in lst
         for i in range(factor)
